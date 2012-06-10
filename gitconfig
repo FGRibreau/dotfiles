@@ -1,0 +1,29 @@
+[user]
+  name = FG Ribreau
+  email = github@fgribreau.com
+[core]
+  editor = vim
+  pager = less -FSRX
+  quotepath = false
+  excludesfile = /Users/FG/.gitignore
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  type = cat-file -t
+  dump = cat-file -p
+  switch = !legit switch \"$@\"
+  branches = !legit branches
+  sprout = !legit sprout \"$@\"
+  unpublish = !legit unpublish \"$@\"
+  harvest = !legit harvest \"$@\"
+  sync = !legit sync \"$@\"
+  publish = !legit publish \"$@\"
+  graft = !legit graft \"$@\"
+[color]
+  branch = auto
+  diff = auto
+  interactive = auto
+  status = auto

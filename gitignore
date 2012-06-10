@@ -1,0 +1,9 @@
+*.pyc
+*.db
+.DS_Store
+node_modules
+*.swp
+.sass-cache
+*.out
+.sublime-workspace
+.sublime-project
