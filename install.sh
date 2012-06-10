@@ -34,7 +34,7 @@ ln -s ${PWD}/tmux ~/.tmux.conf
 echo "Updating submodules"
 git submodule foreach git pull origin master --recurse-submodules
 
-echo "Path zsh-theme"
+echo "Patch zsh-theme"
 rm -rf ~/.oh-my-zsh/themes/fg.zsh-theme
 ln -s ${PWD}/fg.zsh-theme ~/.oh-my-zsh/themes/fg.zsh-theme
 
