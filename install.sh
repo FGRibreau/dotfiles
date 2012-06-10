@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 
-PWD=$(dirname $(which $0))
+# http://hintsforums.macworld.com/archive/index.php/t-73839.html
+abspath=$(cd ${0%/*} && echo $PWD/${0##*/})
+
+# to get the path only - not the script name - add
+path_only=`dirname "$abspath"`
 
 echo "initializing submodules"
 git submodule init
@@ -31,6 +35,7 @@ echo "Updating submodules"
 git submodule foreach git pull origin master --recurse-submodules
 
 echo "Path zsh-theme"
+rm -rf ~/.oh-my-zsh/themes/fg.zsh-theme
 ln -s ${PWD}/fg.zsh-theme ~/.oh-my-zsh/themes/fg.zsh-theme
 
 echo "All done."
