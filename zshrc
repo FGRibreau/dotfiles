@@ -45,14 +45,8 @@ alias gff="git flow feature"
 alias gf="git flow"
 
 export RABBITMQ_NODE_IP_ADDRESS=127.0.0.1
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/local/bin/:/usr/X11/bin:/opt/play:/Applications/XAMPP/xamppfiles/:/usr/local/sbin:/Users/FG/.gem/ruby/1.8/bin
-export NODE_PATH=/usr/local/lib/node_modules/:/Users/FG/.node_libraries/
-export PATH=/usr/local/Cellar/php/5.3.8/bin:$PATH
-export PATH="$HOME/Library/Haskell/bin:$PATH"
-
-# ------ RUBY
+export PATH=/usr/local/bin:/usr/local/sbin/:/usr/bin:/bin:/usr/sbin:/sbin:/opt/local/bin/:/usr/X11/bin:$HOME/.gem/ruby/1.8/bin
+export NODE_PATH=/usr/local/lib/node_modules/
 export TERM="xterm-256color"
-export PATH="./bin:$PATH"
-[[ -s "/Users/FG/.rvm/scripts/rvm" ]] && source "/Users/FG/.rvm/scripts/rvm"
 
 

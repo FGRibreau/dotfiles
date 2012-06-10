@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+echo "Change the current shell to zsh"
+#apt-get install zsh
+sudo chsh -s $(which zsh)
+
 # http://hintsforums.macworld.com/archive/index.php/t-73839.html
 abspath=$(cd ${0%/*} && echo $PWD/${0##*/})
 
