@@ -28,4 +28,7 @@ ln -s ~/Dropbox/OS/dotfiles/tmux ~/.tmux.conf
 echo "Updating submodules"
 git submodule foreach git pull origin master --recurse-submodules
 
+echo "Path zsh-theme"
+ln -s ~/Dropbox/OS/dotfiles/fg.zsh-theme ~/.oh-my-zsh/themes/fg.zsh-theme
+
 echo "All done."
